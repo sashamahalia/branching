@@ -20,7 +20,9 @@
     "vitest": "^1.5.0"
   },
   "dependencies": {
+    "@mikro-orm/cli": "^6.3.10",
     "@mikro-orm/core": "^6.3.10",
+    "@mikro-orm/migrations": "^6.3.10",
     "@mikro-orm/postgresql": "^6.3.10",
     "encore.dev": "^1.41.4",
     "uuid": "^10.0.0"
