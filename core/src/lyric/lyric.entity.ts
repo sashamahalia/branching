@@ -1,7 +1,6 @@
 import {
   Collection,
   Entity,
-  IntegerType,
   ManyToOne,
   OneToMany,
   Property,
@@ -34,7 +33,7 @@ export class Lyric extends BaseEntity {
   })
   parentLyric?: Lyric;
 
-  @OneToMany({ mappedBy: "lyric" })
+  @OneToMany({ mappedBy: (lyric: Lyric) => lyric.parentLyric })
   childLyrics = new Collection<Lyric>(this);
 
   constructor(verse: number, name: string, user: User, song: Song) {

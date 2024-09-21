@@ -14,6 +14,6 @@ export class User extends BaseEntity {
   @Property({ type: "text" })
   bio = "";
 
-  @OneToMany({ mappedBy: "song" })
-  articles = new Collection<Song>(this);
+  @OneToMany({ mappedBy: (song: Song) => song.user })
+  songs = new Collection<Song>(this);
 }
