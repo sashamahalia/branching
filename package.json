@@ -27,6 +27,13 @@
     "encore.dev": "^1.41.4",
     "uuid": "^10.0.0"
   },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./core/db//mikro-orm.config.ts",
+      "./core/dist/mikro-orm.config.js"
+    ]
+  },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.13.0"
   }
