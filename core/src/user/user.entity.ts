@@ -1,7 +1,7 @@
-import { Entity, PrimaryKey, Property } from "@mikro-orm/core";
-import { v4 } from "uuid";
+import { Collection, Entity, OneToMany, Property } from "@mikro-orm/core";
 import { UserRepository } from "./user.repo";
 import { BaseEntity } from "../base.entity.js";
+import { Song } from "../song/song.entity";
 
 @Entity({ repository: () => UserRepository })
 export class User extends BaseEntity {
@@ -13,4 +13,7 @@ export class User extends BaseEntity {
 
   @Property({ type: "text" })
   bio = "";
+
+  @OneToMany({ mappedBy: "song" })
+  articles = new Collection<Song>(this);
 }
