@@ -10,11 +10,15 @@
   },
   "devDependencies": {
     "@types/node": "^20.5.7",
+    "@types/uuid": "^10.0.0",
     "typescript": "^5.2.2",
     "vitest": "^1.5.0"
   },
   "dependencies": {
-    "encore.dev": "^1.41.4"
+    "@mikro-orm/core": "^6.3.10",
+    "@mikro-orm/postgresql": "^6.3.10",
+    "encore.dev": "^1.41.4",
+    "uuid": "^10.0.0"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.13.0"

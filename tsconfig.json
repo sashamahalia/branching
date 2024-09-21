@@ -22,6 +22,10 @@
     "isolatedModules": true,
     "sourceMap": true,
 
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+
     "declaration": true,
 
     /* Advanced Options */
